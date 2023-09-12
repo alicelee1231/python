@@ -17,8 +17,8 @@
 # if today == "일요일":
 #     print("오늘은 쉬는날")
 
-# pizza = True
-# hamburger = True
+pizza = True
+hamburger = True
 
 # if not pizza:
 #     print("yaho~ i have a pizza and a hamburger")
