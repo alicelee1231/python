@@ -1,9 +1,12 @@
 
 import chromadb
+
 from chromadb.config import Settings
 client = chromadb.PersistentClient(path="./path/to/chroma", settings=Settings(allow_reset=True))
 
-collection =  client.create_collection(name="Student4")
+client = chromadb.Client()
+collection =  client.create_collection(name="Student9")
+client.get_collection("Student8")
 
 student_info = """
 Alexandra Thompson, a 19-year-old computer science sophomore with a 3.7 GPA,
@@ -34,6 +37,7 @@ collection.add(
 
 results = collection.query(
     query_texts = ["What is the student name?"],
+    n_results=2
 )
 
 print(results)
