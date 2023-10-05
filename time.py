@@ -30,6 +30,8 @@ import time
 
 #방법3
 
+
+
 def sleep_out(n=1):
     time.sleep(n)
     print(sleep_out(n))
